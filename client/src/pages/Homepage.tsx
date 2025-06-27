@@ -132,14 +132,14 @@ const Homepage = () => {
     description: 'Each saree crafted with care and attention to detail'
   }];
 
-  return <div className="min-h-screen flex flex-col mt-20">
+  return <div className="min-h-screen flex flex-col">
       {/* SEO Header */}
       <header>
         <Navbar />
       </header>
       
       {/* Hero Section */}
-      <section className="relative h-[90vh] bg-gradient-to-br from-primary/95 to-primary/80 flex items-center overflow-hidden">
+      <section className="relative h-[90vh] bg-gradient-to-br from-primary/95 to-primary/80 flex items-center overflow-hidden mt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out" 
           style={{
@@ -151,30 +151,30 @@ const Homepage = () => {
         
         <div className="relative container mx-auto px-4 text-center text-white z-10">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-bold font-['Playfair_Display'] mb-2 leading-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold font-['Playfair_Display'] mb-2 leading-tight">
               Discover Exquisite
               <span className="block text-secondary bg-gradient-gold bg-clip-text text-transparent">
                 Sarees
               </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
               Embrace tradition with our curated collection of premium handloom sarees from master artisans across India
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12">
               <Link to="/products">
-                <Button size="lg" className="btn-secondary text-lg px-10 py-4 hover:scale-105 transition-transform">
+                <Button size="lg" className="btn-secondary text-lg px-8 sm:px-10 py-4 hover:scale-105 transition-transform">
                   Shop Collection
                 </Button>
               </Link>
               <Link to="/products/banarasi">
-                <Button variant="outline" size="lg" className="text-lg px-10 py-4  hover:bg-primary transition-all text-primary ">
+                <Button variant="outline" size="lg" className="text-lg px-8 sm:px-10 py-4  hover:bg-primary transition-all text-primary ">
                   View Banarasi
                 </Button>
               </Link>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-8 text-sm opacity-90">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm opacity-90">
               <div className="flex items-center space-x-2">
                 <Truck className="h-5 w-5" />
                 <span>Free Shipping</span>
