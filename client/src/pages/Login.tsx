@@ -62,8 +62,8 @@ const Login = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="container mx-auto px-4 py-16 flex-1 pt-20">
-        <div className="max-w-md mx-auto mt-16">
+      <div className="container mx-auto px-4 py-8 flex-1 pt-24 sm:pt-28">
+        <div className="max-w-md mx-auto">
           <Card>
             <CardHeader className="text-center">
               <CardTitle className="text-2xl font-bold font-['Playfair_Display'] text-primary">
